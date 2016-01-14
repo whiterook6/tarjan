@@ -1,0 +1,8 @@
+{
+	"name": "tgraboski/tarjan",
+	"autoload": {
+		"psr-0": {
+			"tgraboski\\tarjan\\Tarjan": "src"
+		}
+	}
+}
