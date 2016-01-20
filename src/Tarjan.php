@@ -23,18 +23,19 @@ class Tarjan {
 	 */
 	public function run($graph){
 		$this->graph = $graph;
+		ksort($this->graph);
 
 		// set up the "global" variables that are tracked between the recursive iterations of the algorithm
 		$this->cycles = [];	// resulting cycles
 		$this->marked = [];
-		foreach (array_keys($graph) as $index ) {
+		foreach (array_keys($this->graph) as $index ) {
 			$this->marked[$index] = false;
 		}
 		$this->marked_stack = []; // keep a stack of what's been marked
 		$this->point_stack = []; // keep a stack of the current cycle attempts -- those connected to 
 
 		// Run a depth-first search on all vertices in the graph
-		foreach ($graph as $index => $_) {
+		foreach ($this->graph as $index => $_) {
 
 			$this->recurse($index, $index);
 
