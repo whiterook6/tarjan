@@ -1,17 +1,14 @@
 {
 	"name": "whiterook6/tarjan",
 	"description": "A simple cycle-detection algorithm. Given an edge-edges adjacency list, it returns a list of cycles.",
-	"version": "1.0",
-	"authors": [
-        {
-            "name": "Tim Graboski",
-            "email": "whiterook6@gmail.com"
-        }
-    ],
-    "requires": {},
+	"license": "MIT",
+	"authors": [{
+		"name": "Tim Graboski",
+		"email": "whiterook6@gmail.com"
+	}],
 	"autoload": {
 		"psr-4": {
-			"whiterook6\\tarjan": "src"
+			"whiterook6\\tarjan\\": "src"
 		}
 	}
 }
